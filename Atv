@@ -1,0 +1,226 @@
+/ *
+ * Para alterar este cabeçalho de licença, escolha Cabeçalhos de licença em Propriedades do projeto.
+* Para alterar este arquivo de modelo, escolha Ferramentas | Modelos
+ * e abra o modelo no editor.
+ * /
+package indicemassacorporaljava;
+
+import javax.swing.JOptionPane;
+
+/ **
+ *
+ * @author caustic
+ * /
+public class ImcMain extends javax.swing.JFrame {
+
+    / **
+     * Cria um novo formulário ImcMain
+     * /
+    public ImcMain () {
+        initComponents ();
+    }
+
+    / **
+     * Este método é chamado de dentro do construtor para inicializar o formulário.
+     * AVISO: NÃO modifique este código. O conteúdo deste método é sempre
+     * regenerado pelo Form Editor.
+     * /
+    @SuppressWarnings ("desmarcado")
+    // <editor-fold defaultstate = "collapsed" desc = "Generated Code"> // GEN-BEGIN: initComponents
+    private void initComponents () {
+
+        jLabel1 = novo javax.swing.JLabel ();
+        jLabel2 = novo javax.swing.JLabel ();
+        jLabel3 = novo javax.swing.JLabel ();
+        jLabel4 = novo javax.swing.JLabel ();
+        jLabel5 = novo javax.swing.JLabel ();
+        jTextFieldName = new javax.swing.JTextField ();
+        jTextFieldSurname = new javax.swing.JTextField ();
+        jTextFieldWeight = new javax.swing.JTextField ();
+        jTextFieldHeight = new javax.swing.JTextField ();
+        jComboBoxGender = new javax.swing.JComboBox <> ();
+        jButtonStart = new javax.swing.JButton ();
+        jProgressBarStart = new javax.swing.JProgressBar ();
+
+        setDefaultCloseOperation (javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground (novo java.awt.Color (132, 164, 215));
+
+        jLabel1.setText ("Nome:");
+
+        jLabel2.setText ("Sobrenome:");
+
+        jLabel3.setText ("Seu peso em kg:");
+
+        jLabel4.setText ("Sua altura em metros (ex 1.80):");
+
+        jLabel5.setText ("Gênero:");
+
+        jTextFieldName.setText ("");
+
+        jTextFieldSurname.setText ("");
+
+        jTextFieldWeight.setText ("");
+
+        jTextFieldHeight.setText ("");
+
+        jComboBoxGender.setModel (new javax.swing.DefaultComboBoxModel <> (new String [] {"Masculino", "Feminino"}));
+
+        jButtonStart.setText ("Iniciar!");
+        jButtonStart.addActionListener (new java.awt.event.ActionListener () {
+            public void actionPerformed (java.awt.event.ActionEvent evt) {
+                jButtonStartActionPerformed (evt);
+            }
+        });
+
+        layout javax.swing.GroupLayout = new javax.swing.GroupLayout (getContentPane ());
+        getContentPane (). setLayout (layout);
+        layout.setHorizontalGroup (
+            layout.createParallelGroup (javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup (javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup ()
+                .addContainerGap (40, Short.MAX_VALUE)
+                .addGroup (layout.createParallelGroup (javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup (layout.createSequentialGroup ()
+                        .addComponent (jLabel5)
+                        .addPreferredGap (javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent (jComboBoxGender, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup (layout.createSequentialGroup ()
+                        .addGroup (layout.createParallelGroup (javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup (javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup ()
+                                .addComponent (jLabel2)
+                                .addPreferredGap (javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent (jTextFieldSurname, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup (javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup ()
+                                .addComponent (jLabel1)
+                                .addPreferredGap (javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent (jTextFieldName, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent (jLabel3, javax.swing.GroupLayout.Alignment.LEADING))
+                        .addPreferredGap (javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent (jTextFieldWeight, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup (layout.createSequentialGroup ()
+                        .addComponent (jLabel4)
+                        .addPreferredGap (javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent (jTextFieldHeight, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent (jButtonStart, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent (jProgressBarStart, javax.swing.GroupLayout.DEFAULT_SIZE, 249, Short.MAX_VALUE))
+                .addGap (54, 54, 54))
+        );
+        layout.setVerticalGroup (
+            layout.createParallelGroup (javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup (layout.createSequentialGroup ()
+                .addContainerGap ()
+                .addGroup (layout.createParallelGroup (javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent (jLabel1)
+                    .addComponent (jTextFieldName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap (javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup (layout.createParallelGroup (javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent (jLabel2)
+                    .addComponent (jTextFieldSurname, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap (javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup (layout.createParallelGroup (javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent (jLabel3)
+                    .addComponent (jTextFieldWeight, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap (javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup (layout.createParallelGroup (javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent (jLabel4)
+                    .addComponent (jTextFieldHeight, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap (javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup (layout.createParallelGroup (javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent (jLabel5)
+                    .addComponent (jComboBoxGender, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap (30, 30, 30)
+                .addComponent (jButtonStart)
+                .addPreferredGap (javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent (jProgressBarStart, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap (53, Short.MAX_VALUE))
+        );
+
+        pacote();
+    } // </editor-fold> // GEN-END: initComponents
+
+    private void jButtonStartActionPerformed (java.awt.event.ActionEvent evt) {// GEN-FIRST: event_jButtonStartActionPerformed
+        Nome da string = jTextFieldName.getText ();
+        String lastName = jTextFieldSurname.getText ();
+        float weight = Float.parseFloat (jTextFieldWeight.getText ());
+        float height = Float.parseFloat (jTextFieldHeight.getText ());
+        float imc = peso / (altura * altura);
+        int genderBox = jComboBoxGender.getSelectedIndex (); // índice 0-Masculino / índice 1-feminino
+        String [] classificação = nova String [] {"Abaixo do normal", "Normal", "Acima do normal", "Obesidade"};
+        Gênero da corda;
+        if (genderBox == 0)
+        {
+            gênero = "Sr.";
+        }outro
+        {
+            gênero = "Sra.";
+        }
+        if (imc <= 18,5)
+        {
+           JOptionPane.showMessageDialog (null, "Olá" + gênero + nome + sobrenome + ", seu imc é:" + imc + ", classificado como:" + classificação [0]); 
+        }
+        else if (imc> 18,5 && imc <= 25,0)
+        {
+           JOptionPane.showMessageDialog (null, "Olá" + gênero + nome + sobrenome + ", seu imc é:" + imc + ", classificado como:" + classificação [1]); 
+        }
+        else if (imc> 25,0 && imc <= 30,0)
+        {
+            JOptionPane.showMessageDialog (null, "Hello" + gênero + nome + sobrenome + ", seu imc é:" + imc + ", classificado como:" + classificação [2]);
+        }
+        else if (imc> 30,0)
+        {
+            JOptionPane.showMessageDialog (null, "Hello" + gênero + nome + lastName + ", seu imc é:" + imc + ", classificado como:" + classificação [3]);
+        }
+        
+        
+
+    } // GEN-LAST: event_jButtonStartActionPerformed
+
+    / **
+     * @param args os argumentos da linha de comando
+     * /
+    public static void main (String args []) {
+        / * Definir a aparência do Nimbus * /
+        // <editor-fold defaultstate = "collapsed" desc = "Código de configuração de aparência e comportamento (opcional)">
+        / * Se o Nimbus (introduzido no Java SE 6) não estiver disponível, mantenha a aparência padrão.
+         * Para obter detalhes, consulte http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * /
+        experimentar {
+            para (javax.swing.UIManager.LookAndFeelInfo info: javax.swing.UIManager.getInstalledLookAndFeels ()) {
+                if ("Nimbus" .equals (info.getName ())) {
+                    javax.swing.UIManager.setLookAndFeel (info.getClassName ());
+                    pausa;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger (ImcMain.class.getName ()). log (java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger (ImcMain.class.getName ()). log (java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger (ImcMain.class.getName ()). log (java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger (ImcMain.class.getName ()). log (java.util.logging.Level.SEVERE, null, ex);
+        }
+        // </editor-fold>
+
+        / * Criar e exibir o formulário * /
+        java.awt.EventQueue.invokeLater (new Runnable () {
+            public void run () {
+                new ImcMain (). setVisible (true);
+            }
+        });
+    }
+
+    // Declaração de variáveis ​​- não modifique // GEN-BEGIN: variáveis
+    private javax.swing.JButton jButtonStart;
+    private javax.swing.JComboBox <String> jComboBoxGender;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JProgressBar jProgressBarStart;
+    private javax.swing.JTextField jTextFieldHeight;
+    private javax.swing.JTextField jTextFieldName;
+    private javax.swing.JTextField jTextFieldSurname;
+    private javax.swing.JTextField jTextFieldWeight;
+    // Fim da declaração de variáveis ​​// GEN-END: variáveis
+}
